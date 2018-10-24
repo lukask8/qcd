@@ -1,10 +1,5 @@
 # Quick directory navigator
 
-# Content
-<!-- TOC -->
-
-- [Quick directory navigator](#quick-directory-navigator)
-- [Content](#content)
 - [Intro](#intro)
     - [Run](#run)
     - [Live help](#live-help)
@@ -15,15 +10,12 @@
     - [Install an alias](#install-an-alias)
 - [Dev notes](#dev-notes)
 
-<!-- /TOC -->
-
 # Intro
-
 This is a visual colorized quick directory navigator for linux console.  Quickly change current working directory with a pretty gui.
 Manage bookmarks for "quick jump".
 Written in nodejs and blessedjs module. 
 
-This is a POC "fullstack-everywhere" javascript programming. Nodejs + Blessedjs brings to you a powerful tool to make every complex console app you need without using perl/python/lua/tcltk and other stuff like this. 
+This is a POC "fullstack-everywhere" javascript programming. Nodejs + [blessed js](https://github.com/chjj/blessed) brings to you a powerful tool to make every complex console app you need without using perl/python/lua/tcltk and other stuff like this. 
 
 
 ## Run
@@ -152,7 +144,6 @@ Here are the steps you have to follow:
 1. Create a "CD" script if not exist  `~/software/qcd/exitcwd.sh`
 
 
-
 ```
 exitcwd.sh
 ==========
@@ -169,6 +160,7 @@ if  test -r "$QCD_PWD_FILE"; then
  rm -f "$QCD_PWD_FILE"
  unset QCD_PWD_FILE
 ```
+
 Add an *exec* attribute to execute script
 
 	$ chmod +x exitcwd.sh
