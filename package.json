@@ -1,0 +1,12 @@
+{
+  "name": "kcbr",
+  "author": "lsc",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81"
+  }
+}
