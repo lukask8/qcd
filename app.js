@@ -365,9 +365,14 @@ path_current_directory_list.forEach( item => {
 })
 
 // init bookmark_list from files
-JSON.parse(fs.readFileSync(bookmarks_output_file)).forEach( item => {
-    bookmark_list.add(item);
-});
+try {
+    JSON.parse(fs.readFileSync(bookmarks_output_file)).forEach( item => {
+        bookmark_list.add(item);
+    })
+}
+catch (err){
+ // something went wrong, no bookmarks available
+}
 
 // Append our boxes to the screen.
 // Last added element is on the top. 
