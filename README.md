@@ -46,7 +46,7 @@ Type "ccd" to quick change directory
 │images                        ││                                               │
 └──────────────────────────────┘└───────────────────────────────────────────────┘
                                                                                   
-  [↵] chdir  [space] reset  [\] go HOME  [a-z] go to [SHIFT + H] help [ESC] exit                                                                       
+  [↵] chdir  [space] reset  [\] go HOME  [a-z] go to [SHIFT + H] help [ESC] exit
 ```
 
 ## Live help
